@@ -87,7 +87,7 @@ class VideoData {
     date = (json["date"] == null || json["date"] == '') ? null : json["date"];
     location = (json["location"] == null || json["location"] == '')
         ? null
-        : json["location"];
+        : "found location";
     framerate = double.tryParse("${json["framerate"]}");
     author = (json['author'] == null || json['author'] == '')
         ? null
