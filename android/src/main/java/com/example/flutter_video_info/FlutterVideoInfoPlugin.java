@@ -135,11 +135,11 @@ public class FlutterVideoInfoPlugin implements FlutterPlugin, MethodCallHandler 
     }
 
     String getData(int key, MediaMetadataRetriever mediaRetriever) {
-        try {
+//        try {
             return mediaRetriever.extractMetadata(key);
-        } catch (Exception e) {
-            return null;
-        }
+//        } catch (Exception e) {
+//            return null;
+//        }
     }
 
 }
