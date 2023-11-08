@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Build;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 
 import org.json.JSONObject;
 
@@ -56,6 +57,7 @@ public class FlutterVideoInfoPlugin implements FlutterPlugin, MethodCallHandler 
     public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     String getVidInfo(String path) {
         File file = new File(path);
         boolean isFileExists=file.exists();
